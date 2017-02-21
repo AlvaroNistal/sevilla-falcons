@@ -1,0 +1,970 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    line-height: 1.4;
+}
+
+a {
+    cursor: pointer;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    color: #000;
+    padding: 0.2em 0;
+    margin: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    color: #545454;
+}
+
+.header {
+    background: url('img/hphoto.png') center no-repeat;
+    width: 100%;
+    height: 400px;
+    border-bottom: 1px solid #000000;
+}
+
+.header-h1 {
+    float: left;
+    width: 100%;
+}
+
+.header h1 {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.90);
+    font-size: 55px;
+    position: relative;
+    top: 170px;
+    width: 960px;
+    line-height: 90px;
+    background: rgba(0,0,0, .4);
+}
+
+.header h1 span {
+    font-weight: 400;
+}
+
+.header-top {
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.header-logo {
+    width: 250px;
+    float: left;
+}
+
+.menu, .menu-pages {
+    float: right;
+    color: #ffffff;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.menu a, .menu-pages a, .column-content a, .column-content input[type='submit'] {
+    opacity: 1;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 10px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.menu a:hover, .menu-pages a:hover, .column-content a:hover, .column-content input[type='submit']:hover {
+    opacity: .7;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.menu span, .menu-pages span {
+    opacity: .5;
+}
+
+.content {
+    width: 960px;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.content .home-column:nth-child(3) .column-heading, .content .home-column:nth-child(3) .column-content input[type='submit'] {
+    background: #2f93bd;
+}
+
+.content .home-column:nth-child(3) {
+    margin: 0;
+}
+
+.content .home-column:nth-child(2) .column-heading, .content .home-column:nth-child(2) .column-content a {
+    background: #bd2f46;
+}
+
+.home-column {
+    width: 296px;
+    float: left;
+    margin-right: 36px;
+    font-family: 'Raleway';
+    height: 100%;;
+}
+
+.column-heading {
+    background: #2fbd93;
+    width: 100%;
+    height: 55px;
+}
+
+.column-heading h2 {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 19px;
+    text-align: center;
+    padding: 15px 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+
+.column-content {
+    width: 275px;
+    margin: 0 auto;
+    background: #f1f1f1;
+    border-radius: 0px 0px 10px 10px;
+    height: 330px;
+}
+
+.column-content img {
+    width: 275px;
+}
+
+.column-content p {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #545454;
+    height: 120px;
+}
+
+.column-content a {
+    background: #2fbd93;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 50px !important;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 13px;
+}
+
+.social a img {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.social a img:hover {
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/* ================================ */
+/* ========= Project page ========= */
+/* ================================ */
+
+.header-pages {
+    background: #ffffff;
+    width: 100%;
+    height: 100px;
+}
+
+.menu-pages a {
+    color: #545454 !important;
+    text-shadow: none !important;
+    font-weight: 300 !important;
+}
+
+.menu-pages span {
+    color: #545454 !important;
+}
+
+.project-header {
+    width: 100%;
+    background: url("img/projectheader.png");
+    height: 212px;
+    float: left;
+}
+
+.project-header h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    width: 270px;
+    position: relative;
+    top: 70px;
+    left: 350px;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #00BD92;
+    list-style: none;
+    height: 65px;
+    font-size: 44px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.project-header img {
+    width: 960px;
+}
+
+.project-tabs {
+    width: 100%;
+    background: #f1f1f1;
+    float: left;
+}
+
+.project-tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 65px;
+    font-size: 18px;
+}
+
+.project-tabs ul li {
+    width: 160px;
+    display: block;
+    padding: 0;
+    text-align: center;
+    color:#00BD92;
+    background: #f1f1f1;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    float: left;
+    margin: 0;
+
+}
+
+.project-tabs ul li:hover {
+    color:#f1f1f1;
+    background: rgba(0, 189, 146, .6);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.project-tabs a {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-tabs ul .active {
+    background: #00BD92;
+    color: #ffffff !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.project-tabs-content {
+    float: left;
+
+}
+
+.project-tabs-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 65px;
+    font-size: 18px;
+}
+
+.switcher-content {
+  display: none;
+}
+
+.project-tabs-content li {
+    list-style: none;
+    float: left;
+}
+
+.project-tabs-content h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+
+}
+
+.project-tabs-content p {
+    font-size: 18px;
+    
+}
+
+/* ================================ */
+/* ========= Falcons page ========= */
+/* ================================ */
+
+
+.falcons-header {
+    width: 100%;
+    background: url("img/falconsheader.png");
+    height: 212px;
+}
+
+.falcons-header h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    width: 270px;
+    position: relative;
+    top: 70px;
+    left: 350px;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #BD2F46;
+    list-style: none;
+    height: 65px;
+    font-size: 44px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.falcons-separator {
+    width: 100%;
+    float: left;
+    display: table;
+    background: #bd2f46;
+    margin-top: 15px;
+}
+
+.falcons-separator h2 {
+    margin: 10px 20px;
+    color: #ffffff;
+    font-weight: 200;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.falcons-row {
+    width: 100%;
+    float: left;
+    display: table;
+    margin: 20px 0 10px 0;
+}
+
+.falcons-row a.falcons-image {
+    float: left;
+    display: table-cell;
+    width: 300px;
+    margin-left: 30px;
+    height: 230px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.falcons-row a.falcons-image:first-of-type {
+    margin-left: 0 !important;
+}
+
+.falcons-row a.falcons-image .caption {
+    height: 40px;  
+    width: 300px;  
+    display: block;  
+    bottom: 0px;  
+    line-height: 42px;  
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    position: relative;
+    color: #fff;
+    z-index: 100;
+    text-decoration: none;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+
+.falcons-row a.falcons-image:hover .caption {
+    -moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);  
+}
+
+
+/* ================================ */
+/* ========= Contact page ========= */
+/* ================================ */
+
+.contact-header {
+    width: 100%;
+    background: url("img/contactheader.png");
+    height: 212px;
+}
+
+.contact-header h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    width: 270px;
+    position: relative;
+    top: 70px;
+    left: 350px;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #2F93BD;
+    list-style: none;
+    height: 65px;
+    font-size: 44px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.contact-form {
+    width: 470px;
+    border: 1px solid #2F93BD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 30px 20px 0 0;
+    padding: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+}
+
+.contact-form h2 {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2F93BD;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"] {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #a3a3a3;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 17px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.contact-form textarea {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #a3a3a3;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    margin-top: 17px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 10px;
+
+}
+
+.contact-form input[type="submit"] {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #2F93BD;
+    border: 2px solid #2F93BD;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-family: Raleway, Helvetica, sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 1;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.contact-form input[type="submit"]:hover {
+    opacity: .7;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.contact-right {
+    width: 470px;
+    border: 1px solid #2F93BD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 25px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-top: 30px;
+    float: left;
+
+}
+
+.contact-right .details {
+    float: left;
+    width: 100%;
+
+}
+
+.contact-right .details h3, .contact-right .social h3 {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2F93BD;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+.contact-right .details span {
+    font-size: 27px;
+    float: left;
+    margin-bottom: 40px;
+
+}
+
+.contact-right .details a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.contact-right .social {
+    float: left;
+    width: 100%;
+
+}
+
+.contact-right .social .social-links {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.contact-right .social .social-links a {
+    float: left;
+    color: #2F93BD;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 5px 5px 5px 0;
+    margin-right: 20px;
+
+}
+
+.contact-right .social .social-links a img {
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+
+}
+
+
+
+
+/* ================================ */
+/* ============ Footer ============ */
+/* ================================ */
+
+.footer {
+    width:100%;
+    float:left;
+    margin:30px auto;
+}
+
+.footer .social {
+
+}
+
+.footer .social a {
+
+}
+
+
+
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.column-content input[type='text'], .column-content input[type='email'], .column-content input[type='tel'] {
+    width: 245px;
+    margin: 14px 14px 2px;
+    height: 35px;
+    -webkit-appearance: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #545454;
+    outline: none;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+} 
+
+.column-content textarea {
+    min-width: 245px;
+    resize:none;
+    margin: 14px 14px 5px;
+    height: 85px;
+    -webkit-appearance: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #545454;
+    outline: none;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+.column-content input[type='submit'] {
+    background: #2fbd93;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 75px !important;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border:none;
+    font-size:16px;
+    position:relative;
+    top:2px;
+    cursor:pointer;
+} 
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+{
+    resize: none;
+}
